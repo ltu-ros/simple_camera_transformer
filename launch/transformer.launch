@@ -1,0 +1,6 @@
+<launch>
+    <node name="cam_transformer" pkg="simple_camera_transformer" type="cam_transformer" respawn="true" respawn_delay="10" output="screen">
+        <param name="pub_topic"   type="string" value="/my_camera/cam_pub/image_transformed" />
+        <param name="sub_topic" type="string" value="/my_camera/cam_pub/image_raw" />
+    </node>
+</launch>
